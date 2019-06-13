@@ -1,0 +1,59 @@
+#bio {
+  width: 70%;
+  float: left;
+  flex: 1;
+  overflow: hidden;
+  line-height: 1.0;
+  padding-left: 20%;
+}
+
+#bio_img_div {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  float: right;
+  flex: 1;
+  overflow: hidden;
+  line-height: 1.0;
+}
+
+/* #bio_img_div img {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+} */
+
+#bio_container {
+  display:flex;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  background: #eaeaea;
+  color: #141414;
+}
+
+#title_1, #title_2, #title_3 {
+  display: inline-block;
+  color: #141414;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+}
+
+#bio_body {
+  display: block;
+  color: #757575;
+  width: 90%;
+  font-family: 'Muli', sans-serif;
+  padding-left: 3px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+#linkedin_hov:hover, #email_hov:hover, #github_hov:hover {
+  -webkit-filter: invert(80%) !important;
+  transition: 0.15s ease;
+}
+
+#linkedin_hov:not(:hover), #email_hov:not(:hover), #github_hov:not(:hover) {
+  -webkit-filter: invert(0%) !important;
+  transition: 0.15s ease;
+}

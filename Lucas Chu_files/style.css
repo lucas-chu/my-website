@@ -1,0 +1,247 @@
+@import "compass/css3";
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* particleground demo */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  margin: 0 0 0 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1;
+  margin: 0 0 0 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #eaeaea;
+}
+
+#particles {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #141414;
+  font-family: 'Montserrat', sans-serif;
+  color: #eaeaea;
+  line-height: 1.0;
+  -webkit-font-smoothing: antialiased;
+}
+
+#intro {
+  position: relative;
+  overflow: hidden;
+  left: 15%;
+  top: -150%;
+
+  padding: 0 0px;
+  width: 100%;
+  text-align: left;
+}
+
+h1 {
+  font-size: 85px;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  margin: 0 0 0 0;
+}
+
+.typed-cursor {
+  margin-left: 2px;
+  font-size: 40px;
+}
+
+#typestart {
+  margin-top: 10px;
+  font-size: 40px;
+  font-family: 'Heebo', sans-serif;
+  display:inline-block;
+}
+
+#typed {
+  margin-top: 0px;
+  margin-left: 5px;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  display:inline-block;
+}
+
+#contact_buttons {
+  background: #eaeaea;
+  color: #141414;
+  text-align: center;
+  margin-top: -30px;
+  padding-bottom: 15px;
+}
+
+#contact_info {
+  line-height: 1.3;
+  transform: translateY(-120%);
+}
+
+#typestart {
+  padding-left: 3px;
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  border: 0;
+  height: 1px;
+  width: 60%;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  mask: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+ul.techlist {
+  position: absolute;
+  bottom: 0px;
+  padding-bottom: 5px;
+  margin-left: 2rem;
+  float: left;
+}
+
+/* @media only screen and (max-height: 920px) {
+    ul.techlist {
+        display: none;
+    }
+} */
+
+@media only screen and (max-width: 1400px) {
+    ul.techlist {
+      display: none;
+    }
+}
+
+
+ul.techlist li {
+  display:inline;
+  border-style: none;
+  font-size: 14px;
+  margin-right: 3px;
+  padding: 5px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #4285f4;
+}
+
+.ribbon{
+  position:relative;
+  display: inline;
+  float: right;
+  padding: 0 0.5em;
+  font-size: 1.000em;
+  /* width: 40%; */
+  margin: 20px 0px 0 0;
+  padding: 0px 10px 3px 1em;
+  text-align: left;
+  color: #eaeaea;
+  border-radius: 0.156em 0 0 0.156em;
+  background: #f44242;
+  box-shadow: -1px 2px 3px rgba(0,0,0,0.5);
+}
+
+.ribbon:before, .ribbon:after{
+  position:absolute;
+  content: '';
+  display: block;
+  transform: scaleX(-1);
+}
+
+.ribbon:before{
+  width: 0.469em;
+  height: 100%;
+  padding: 0 0 0.438em;
+  top:0;
+  right: -0.469em;
+  background:inherit;
+  border-radius: 0.313em 0 0 0.313em;
+}
+
+.ribbon:after{
+  width: 0.313em;
+  height: 0.313em;
+  background: rgba(0,0,0,0.35);
+  bottom: -0.313em;
+  right: -0.313em;
+  border-radius: 0.313em 0 0 0.313em;
+  box-shadow: inset -1px 2px 2px rgba(0,0,0,0.3);
+}
+
+.hover {
+  color: #141414;
+  text-decoration: none;
+  padding: 20px 0px;
+  margin: 0px 20px 0px 0px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.hover::after {
+  transition: 300ms;
+  height: 35px;
+  content: "";
+  position: absolute;
+  background-color: #ffff00;
+  z-index: -1;
+  width: 0%;
+  left: 10px;
+  bottom: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+#bio_container:hover > #bio > #title_1 > .hover {
+  opacity: 1.0;
+}
+
+#bio_container:hover > #bio > #title_1 > .hover::after {
+  width: 100%;
+}
+
+#projects:hover > #title_2 > .hover {
+  opacity: 1.0;
+}
+
+#title_2 .hover {
+  padding-top: 0px;
+}
+
+#title_2 .hover::after {
+  transform: translateY(-35%);
+}
+
+#projects:hover > #title_2 > .hover::after {
+  width: 100%;
+}
+
+#skills:hover > #title_3 > .hover {
+  opacity: 1.0;
+}
+
+#skills:hover > #title_3 > .hover::after {
+  width: 100%;
+}
